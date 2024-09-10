@@ -8,7 +8,7 @@ import { en_US, NZ_I18N } from "ng-zorro-antd/i18n";
 import { AppRoutingModule } from "./app.routes";
 import { AppComponent } from "./app.component";
 import { RouterLink } from "@angular/router";
-import { NzIconModule } from "ng-zorro-antd/icon";
+
 
 
 

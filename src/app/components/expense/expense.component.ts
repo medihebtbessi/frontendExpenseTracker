@@ -51,6 +51,8 @@ export class ExpenseComponent implements OnInit{
   }
   submitForm() {
    this.expenseService.postExpense(this.expenseForm.value).subscribe(res=>{
+    this.getAllExpenses();
+    this.expenseForm.reset();
     this.message.success("Expense posted successfully",{nzDuration:5000});
    },error=>{
     this.message.error("Error while posting expense",{nzDuration:5000});
